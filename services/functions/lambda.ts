@@ -48,7 +48,7 @@ export const handler: APIGatewayProxyHandlerV2 = async (event) => {
   const s3 = new AWS.S3();
 
   const key = permanent ? `p/${fileName}` : `u/${fileName}`;
-  const shortUrl = `https://uclimb.info/${key}`;
+  const shortUrl = `${process.env.short}/${key}`;
 
   try {
     await new Promise((resolve, reject) => {

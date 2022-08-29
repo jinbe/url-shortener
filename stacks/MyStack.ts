@@ -7,6 +7,7 @@ export function MyStack({ stack }: StackContext) {
         environment: {
           apiKey: process.env.API_KEY || '',
           bucket: process.env.BUCKET || '',
+          short: process.env.SHORT || '',
         },
       },
     },

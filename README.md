@@ -13,6 +13,7 @@ Generate an API key (it can be in any format) and fill in the file contents as b
 ```
 API_KEY=[generated api key]
 BUCKET=[s3 bucket]
+SHORT=[short url domain E.g. https://short.link]
 ```
 
 ## Deploy

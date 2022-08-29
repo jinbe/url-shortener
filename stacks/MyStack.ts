@@ -16,7 +16,7 @@ export function MyStack({ stack }: StackContext) {
     },
   });
 
-  api.attachPermissions(['s3:PutObject']);
+  api.attachPermissions(['s3:PutObject', 's3:PutObjectAcl']);
 
   stack.addOutputs({
     ApiEndpoint: api.url

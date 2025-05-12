@@ -1,4 +1,4 @@
-import { Api, StackContext } from "@serverless-stack/resources";
+import { Api, StackContext } from "sst/constructs";
 
 export function MyStack({ stack }: StackContext) {
   const api = new Api(stack, "api", {

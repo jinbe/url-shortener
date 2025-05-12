@@ -43,7 +43,7 @@ export const handler: APIGatewayProxyHandlerV2 = async (event) => {
   }
 
   const uid = new ShortUniqueId({length: 6});
-  const fileName = uid();
+  const fileName = uid.randomUUID();
 
   const s3 = new AWS.S3();
 
